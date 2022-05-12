@@ -1,0 +1,10 @@
+Package: GRCI
+Type: Package
+Title: Generalized Root Causal Inference (GRCI)
+Version: 0.1.0
+Author: Eric V. Strobl
+Description: GRCI infers patient-specific root causes or causal direction using the heteroscedastic noise model
+License: CC BY-NC 4.0
+Encoding: UTF-8
+Depends: pcalg, MASS, RANN, Rfast, hetGP, gptk, xgboost, DirichletReg, treeshap
+LazyData: true
