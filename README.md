@@ -10,6 +10,8 @@ The Experiments folder contains code needed to replicate the synthetic data resu
 
 > install_github("ericstrobl/GRCI")
 
+> install("Directory_to/RANN-master")
+
 > library(GRCI)
 
 # Run GRCI
