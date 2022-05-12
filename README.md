@@ -8,9 +8,9 @@ The Experiments folder contains code needed to replicate the synthetic data resu
 
 > library(devtools)
 
-> install_github("ericstrobl/CIM")
+> install_github("ericstrobl/GRCI")
 
-> library(CIM)
+> library(GRCI)
 
 # Run GRCI on the Data
 
