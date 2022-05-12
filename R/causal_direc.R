@@ -1,7 +1,7 @@
 causal_direc <- function(X,Y){
   
-  rXY = PartialOut_v(X,Y) #9
-  rYX = PartialOut_v(Y,X) #10
+  rXY = PartialOut(X,Y) #9
+  rYX = PartialOut(Y,X) #10
   
   rXY = rXY / sd(rXY) #11
   rYX = rYX / sd(rYX) #12
