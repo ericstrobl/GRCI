@@ -50,27 +50,27 @@ for (i in 1:reps){
   time = (proc.time() - ptm)[3]
   GRCI_res[[i]]$time = time + outD$time_E
   out$scores = out$scores[idt,]
-  GRCI_res[[i]]$rank_overlap = eval_scores_diabetes2(out,X[is[idt],],id)
+  GRCI_res[[i]]$rank_overlap = eval_scores_diabetes(out,X[is[idt],],id)
   
   #RCI
   out = RCI(Xt,Yt)
   RCI_res[[i]]$time = out$time_orig
   RCI_res[[i]]$time_tree_shap = out$time_tree_shap
   out$scores = out$scores[idt,]
-  RCI_res[[i]]$rank_overlap = eval_scores_diabetes2(out,X[is[idt],],id)
+  RCI_res[[i]]$rank_overlap = eval_scores_diabetes(out,X[is[idt],],id)
   out$scores = out$scores_tree_shap
   out$scores = out$scores[idt,]
-  RCI_res[[i]]$rank_overlap_tree_shap = eval_scores_diabetes2(out,X[is[idt],],id)
+  RCI_res[[i]]$rank_overlap_tree_shap = eval_scores_diabetes(out,X[is[idt],],id)
   
   #ICA
   out = ICA_predict(Xt,Yt)
   ICA_res[[i]]$time = out$time_orig
   ICA_res[[i]]$time_tree_shap = out$time_tree_shap
   out$scores = out$scores[idt,]
-  ICA_res[[i]]$rank_overlap = eval_scores_diabetes2(out,X[is[idt],],id)
+  ICA_res[[i]]$rank_overlap = eval_scores_diabetes(out,X[is[idt],],id)
   out$scores = out$scores_tree_shap
   out$scores = out$scores[idt,]
-  ICA_res[[i]]$rank_overlap_tree_shap = eval_scores_diabetes2(out,X[is[idt],],id)
+  ICA_res[[i]]$rank_overlap_tree_shap = eval_scores_diabetes(out,X[is[idt],],id)
   
   #CO
   ptm <- proc.time()
@@ -78,7 +78,7 @@ for (i in 1:reps){
   CO_res[[i]]$time = (proc.time() - ptm)[3] + time_G
   CO_res[[i]]$time_G = time_G
   out$scores = out$scores[idt,]
-  CO_res[[i]]$rank_overlap = eval_scores_diabetes2(out,X[is[idt],],id)
+  CO_res[[i]]$rank_overlap = eval_scores_diabetes(out,X[is[idt],],id)
   
   #MS
   ptm <- proc.time()
@@ -86,7 +86,7 @@ for (i in 1:reps){
   MS_res[[i]]$time = (proc.time() - ptm)[3] + time_G
   out$scores = matrix(out$scores,length(is),length(out$scores),byrow=TRUE)
   out$scores = out$scores[idt,]
-  MS_res[[i]]$rank_overlap = eval_scores_diabetes2(out,X[is[idt],],id)
+  MS_res[[i]]$rank_overlap = eval_scores_diabetes(out,X[is[idt],],id)
   
   
   ### SAVE RESULTS
