@@ -12,7 +12,7 @@ The Experiments folder contains code needed to replicate the synthetic data resu
 
 > library(GRCI)
 
-# Run GRCI on the Data
+# Run GRCI
 
 > G = generate_DAG_HNM(p=10,en=2)
 
