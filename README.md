@@ -1,6 +1,6 @@
 # Generalized Root Causal Inference
 
-This repository contains R code for the Generalized Root Causal Inference (GRCI) algorithm for identify patient/sample-specific root causes of a binary variable using the heteroscedastic noise model (HNM). HNM models both the conditional expectation and conditional mean absolute deviation (similar to the conditional variance) using non-linear functions.
+This repository contains R code for the Generalized Root Causal Inference (GRCI) algorithm for identifying patient/sample-specific root causes of a binary variable using the heteroscedastic noise model (HNM). HNM models both the conditional expectation and conditional mean absolute deviation (similar to the conditional variance) using non-linear functions.
 
 The Experiments folder contains code needed to replicate the synthetic data results.
 
