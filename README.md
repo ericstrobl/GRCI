@@ -14,10 +14,12 @@ The Experiments folder contains code needed to replicate the synthetic data resu
 
 # Run GRCI on the Data
 
-> suffStat = list(); suffStat$data = synth_data[,resort_p];
+> G = generate_DAG_HNM(p=10,en=2)
 
-> out = CIM(suffStat, GCM_wrap, alpha=0.01, p=ncol(suffStat$data), waves=waves) # run CIM
+> X = sample_DAG_HNM(nsamps = 1000,G)
 
-> print(out$f_star) # print F*
+> out = GRCI(X$data[,-G$Y],X$data[,G$Y])
+
+> print(out$order); print(out$scores[1:5,]) # print reverse partial order and their corresponding error terms
 
 
