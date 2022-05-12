@@ -24,7 +24,7 @@ MS_res = GRCI_res
 r= length(Y)
 c = ncol(X)
 
-for (i in 52:reps){
+for (i in 1:reps){
   print(i)
   
   is = sample(r,r,replace=TRUE) ####
