@@ -7,6 +7,7 @@ library(gptk)
 
 results = list()
 skip = c(47, 52, 53, 54, 55, 70, 71, 105, 107)
+load("pairs.RData")
 for (i in 1:108){
   print(i)
   if (is.element(i,skip)){
