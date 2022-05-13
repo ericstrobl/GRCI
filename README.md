@@ -28,6 +28,6 @@ Then install GRCI:
 
 > out = GRCI(X$data[,-G$Y],X$data[,G$Y])
 
-> print(out$order); print(out$scores[1:5,]) # print reverse partial order and their corresponding error terms
+> print(out$order); print(out$scores[1:5,]) # print reverse partial order and the corresponding error terms
 
 
