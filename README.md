@@ -6,7 +6,7 @@ The Experiments folder contains code needed to replicate the synthetic data resu
 
 # Installation
 
-Download the .zip file. 
+Click the green 'Code' button up top and download the .zip file. Then:
 
 > library(devtools)
 
