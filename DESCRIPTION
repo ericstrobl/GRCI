@@ -6,5 +6,5 @@ Author: Eric V. Strobl
 Description: GRCI infers patient-specific root causes or causal direction using the heteroscedastic noise model
 License: CC BY-NC 4.0
 Encoding: UTF-8
-Depends: pcalg, MASS, RANN, Rfast, hetGP, gptk, xgboost, DirichletReg, treeshap, randomForest, RcppHungarian
+Depends: pcalg, MASS, RANN, Rfast, hetGP, gptk, xgboost, DirichletReg, treeshap, randomForest, RcppHungarian, survival
 LazyData: true
