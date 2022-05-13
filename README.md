@@ -10,9 +10,13 @@ Click the green 'Code' button up top and download the .zip file. Then:
 
 > library(devtools)
 
-Extract 'RANN-master.zip' and install RANN. Then:
+Extract 'GRCI-master.zip' and then extract 'RANN-master.zip.' Install RANN:
 
-> install("Directory_to.../GRCI")
+> install("Directory_to.../RANN-master")
+
+Then install GRCI:
+
+> install("Directory_to.../GRCI-master")
 
 > library(GRCI)
 
