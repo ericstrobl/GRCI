@@ -6,11 +6,13 @@ The Experiments folder contains code needed to replicate the synthetic data resu
 
 # Installation
 
+Download the .zip file. 
+
 > library(devtools)
 
-> install_github("ericstrobl/GRCI")
+Extract 'RANN-master.zip' and install RANN. Then:
 
-> install("Directory_to.../RANN-master")
+> install("Directory_to.../GRCI")
 
 > library(GRCI)
 
